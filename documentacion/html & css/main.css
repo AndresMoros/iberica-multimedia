@@ -1,0 +1,16 @@
+/* Estilos genéricos */
+
+.center_text {
+    text-align: center; 
+    /* Centra el texto en el contenedor */
+}
+
+.uppercase_text {
+    text-transform: uppercase;
+    /* Coloca todo el texto en mayúsculas */
+}
+
+.cursive_text {
+    font-style: italic;
+    /* Coloca las letras en cursiva */
+}

@@ -1,0 +1,11 @@
+/* text before quiz */
+
+.welcome_msg {
+    font-weight: bold;
+    /* Coloca el texto en negrita */
+}
+
+.info_text {
+    font-style: italic;
+    /* Coloca las letras en cursiva */
+}
