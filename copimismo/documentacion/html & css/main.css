@@ -1,7 +1,7 @@
 /* Estilos genéricos */
 
 .center_text {
-    text-align: center; 
+    text-align: center;
     /* Centra el texto en el contenedor */
 }
 
@@ -13,4 +13,10 @@
 .cursive_text {
     font-style: italic;
     /* Coloca las letras en cursiva */
+}
+
+
+/* La siguiente linea elimina del DOM el botón de volver */
+a[class="qsm-btn qsm-previous qmn_btn mlw_qmn_quiz_link mlw_previous"] {
+    display: none !important;
 }
