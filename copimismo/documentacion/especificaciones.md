@@ -26,18 +26,6 @@ Es necesario crear una nueva página por cada pregunta y hacer el paso de "No mo
 ### Mostrar solo una pregunta por página
 Si se desea que el usuario pueda ir a la pregunta anterior modifica el valor en _Opciones > Display > Question Preferences_ (por defecto es 0) por 1 o la cantidad de preguntas que se desea se muestren por pantalla. Con esto nos ahorramos crear una pantalla nueva por cada pregunta que quiera hacerse en el test.
 
-**Nota:** Otra forma de evitar que se pueda volver a la pregunta anterior es usar el siguiente código:
-
-```css
-a[class="qsm-btn qsm-previous qmn_btn mlw_qmn_quiz_link mlw_previous"] {
-    display: none !important;
-}
-/* En el archivo:
-copimismo\documentacion\html & css\main.css */
-```
-
-Esta linea de código permite ocultar el botón de volver sin la necesidad de hacer una página nueva por cada pregunta, y usando el método para *Mostrar solo una pregunta por página*, se pueden introducuir todas las preguntas en una misma página.
-
 # Configuraciones
 
 ## Texto

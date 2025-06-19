@@ -1,6 +1,6 @@
 {
     "quiz": {
-        "quiz_name": "English Level B1 Test",
+        "quiz_name": "English Level B2 Test",
         "quiz_post_id": 0,
         "quiz_contact_info": "",
         "quiz_final_text": "",
@@ -9,303 +9,308 @@
         "quiz_template": "default",
         "questions": [
             {
-                "question_name": "If I ___ more time, I would travel the world.",
+                "question_name": "Despite ___ hard, he failed the exam.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "have",
-                    "had",
-                    "will have"
+                    "of studying",
+                    "studying",
+                    "to study"
                 ],
                 "correct_answer": [
                     "2"
                 ],
                 "question_order": 1,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "She asked me if I ___ seen her keys.",
+                "question_name": "I wish I ___ more time to travel when I was younger.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "have",
                     "had",
-                    "has"
+                    "have had",
+                    "would have"
                 ],
                 "correct_answer": [
-                    "2"
+                    "1"
                 ],
                 "question_order": 2,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "I'm used ___ getting up early.",
+                "question_name": "It's high time you ___ your own decisions.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "to",
-                    "for",
-                    "on"
+                    "make",
+                    "made",
+                    "had made"
                 ],
                 "correct_answer": [
-                    "1"
+                    "2"
                 ],
                 "question_order": 3,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "He's the man ___ fixed our car.",
+                "question_name": "She ___ have left by now; her train was due an hour ago.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "which",
-                    "who",
-                    "where"
-                ],
-                "correct_answer": [
-                    "2"
-                ],
-                "question_order": 4,
-                "question_answer_type": "single",
-                "question_points": "0.5"
-            },
-            {
-                "question_name": "We'll go for a walk unless it ___.",
-                "question_type": "multiple_choice",
-                "question_options": [
-                    "rains",
-                    "rain",
-                    "will rain"
+                    "must",
+                    "should",
+                    "would"
                 ],
                 "correct_answer": [
                     "1"
                 ],
-                "question_order": 5,
-                "question_answer_type": "single",
+                "question_order": 4,
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "They were tired because they ___ all day.",
+                "question_name": "Hardly had I arrived ___ it started raining.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "worked",
-                    "had worked",
-                    "have worked"
+                    "than",
+                    "when",
+                    "then"
                 ],
                 "correct_answer": [
                     "2"
+                ],
+                "question_order": 5,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "The more you practice, ___ you become.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "the better",
+                    "better",
+                    "the best"
+                ],
+                "correct_answer": [
+                    "1"
                 ],
                 "question_order": 6,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "It's important ___ English in class.",
+                "question_name": "I regret ___ you that your application has been unsuccessful.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "speaking",
-                    "to speak",
-                    "speak"
+                    "to inform",
+                    "informing",
+                    "inform"
                 ],
                 "correct_answer": [
-                    "2"
+                    "1"
                 ],
                 "question_order": 7,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "I don't mind ___ late on Fridays.",
+                "question_name": "He denied ___ the money.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "work",
-                    "working",
-                    "to work"
+                    "to steal",
+                    "stealing",
+                    "stole"
                 ],
                 "correct_answer": [
                     "2"
                 ],
                 "question_order": 8,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "He's not tall enough ___ play basketball professionally.",
+                "question_name": "If only I ___ her advice.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "for",
-                    "to",
-                    "in order to"
-                ],
-                "correct_answer": [
-                    "2"
-                ],
-                "question_order": 9,
-                "question_answer_type": "single",
-                "question_points": "0.5"
-            },
-            {
-                "question_name": "We haven't seen each other ___ we left school.",
-                "question_type": "multiple_choice",
-                "question_options": [
-                    "for",
-                    "since",
-                    "from"
-                ],
-                "correct_answer": [
-                    "2"
-                ],
-                "question_order": 10,
-                "question_answer_type": "single",
-                "question_points": "0.5"
-            },
-            {
-                "question_name": "I'll wait here until he ___.",
-                "question_type": "multiple_choice",
-                "question_options": [
-                    "comes",
-                    "will come",
-                    "came"
+                    "had taken",
+                    "took",
+                    "would take"
                 ],
                 "correct_answer": [
                     "1"
                 ],
-                "question_order": 11,
-                "question_answer_type": "single",
+                "question_order": 9,
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "She's really good ___ playing the piano.",
+                "question_name": "The new policy is designed to ___ fair treatment for all employees.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "in",
-                    "at",
-                    "with"
+                    "ensure",
+                    "insure",
+                    "assure"
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 10,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "She's always ___ a point of being on time.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "making",
+                    "taking",
+                    "doing"
                 ],
                 "correct_answer": [
                     "2"
+                ],
+                "question_order": 11,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "I'd rather you ___ here.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "didn't smoke",
+                    "don't smoke",
+                    "not smoke"
+                ],
+                "correct_answer": [
+                    "1"
                 ],
                 "question_order": 12,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "I prefer tea ___ coffee.",
+                "question_name": "By the time we arrived, the play ___ already started.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "than",
-                    "over",
-                    "to"
+                    "had",
+                    "has",
+                    "was"
                 ],
                 "correct_answer": [
-                    "3"
+                    "1"
                 ],
                 "question_order": 13,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "The exam was ___ difficult that nobody passed.",
+                "question_name": "He's capable ___ solving complex problems.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "such",
-                    "so",
-                    "too"
+                    "of",
+                    "in",
+                    "for"
                 ],
                 "correct_answer": [
-                    "2"
+                    "1"
                 ],
                 "question_order": 14,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "We arrived ___ the airport just in time.",
+                "question_name": "Not only ___ talented, but he's also very hardworking.",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "at",
-                    "on",
-                    "in"
+                    "is he",
+                    "he is",
+                    "has he"
                 ],
                 "correct_answer": [
                     "1"
                 ],
                 "question_order": 15,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "They are looking forward to ___ you.",
+                "question_name": "Choose the correct sentence:",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "see",
-                    "seeing",
-                    "to see"
-                ],
-                "correct_answer": [
-                    "2"
-                ],
-                "question_order": 16,
-                "question_answer_type": "single",
-                "question_points": "0.5"
-            },
-            {
-                "question_name": "By this time next year, I ___ graduated.",
-                "question_type": "multiple_choice",
-                "question_options": [
-                    "will have",
-                    "have",
-                    "had"
+                    "She suggested going to the cinema.",
+                    "She suggested to go to the cinema.",
+                    "She suggested go to the cinema.",
+                    "She suggested that go to the cinema."
                 ],
                 "correct_answer": [
                     "1"
                 ],
-                "question_order": 17,
-                "question_answer_type": "single",
+                "question_order": 16,
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "She said that she ___ come later.",
+                "question_name": "Choose the correct sentence:",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "will",
-                    "would",
-                    "can"
+                    "If I would have known, I would have told you.",
+                    "If I had known, I would have told you.",
+                    "If I knew, I would have told you.",
+                    "If I have known, I would have told you."
+                ],
+                "correct_answer": [
+                    "2"
+                ],
+                "question_order": 17,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "Choose the correct sentence:",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "He denied to steal the money.",
+                    "He denied stealing the money.",
+                    "He denied have stolen the money.",
+                    "He denied he steal the money."
                 ],
                 "correct_answer": [
                     "2"
                 ],
                 "question_order": 18,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "He's responsible ___ organizing the event.",
+                "question_name": "Choose the correct sentence:",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "for",
-                    "of",
-                    "with"
+                    "Despite of the rain, we went for a walk.",
+                    "Despite the rain, we went for a walk.",
+                    "In spite the rain, we went for a walk.",
+                    "Despite it rained, we went for a walk."
                 ],
                 "correct_answer": [
-                    "1"
+                    "2"
                 ],
                 "question_order": 19,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             },
             {
-                "question_name": "It was the best movie I ___ seen.",
+                "question_name": "Choose the correct sentence:",
                 "question_type": "multiple_choice",
                 "question_options": [
-                    "ever",
-                    "never",
-                    "had ever"
+                    "I look forward to hear from you.",
+                    "I look forward to hearing from you.",
+                    "I look forward hearing from you.",
+                    "I look forward for hearing from you."
                 ],
                 "correct_answer": [
-                    "3"
+                    "2"
                 ],
                 "question_order": 20,
-                "question_answer_type": "single",
+                "Youtube_type": "single",
                 "question_points": "0.5"
             }
         ]
