@@ -1,0 +1,318 @@
+{
+    "quiz": {
+        "quiz_name": "English Level C1 Test",
+        "quiz_post_id": 0,
+        "quiz_contact_info": "",
+        "quiz_final_text": "",
+        "quiz_option_text": "",
+        "quiz_contact_email": "",
+        "quiz_template": "default",
+        "questions": [
+            {
+                "question_name": "Had I known about the party, I ___ definitely have come.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "would",
+                    "will",
+                    "had"
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 1,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "She insisted ___ paying for the entire meal.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "on",
+                    "in",
+                    "at"
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 2,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "The project was eventually completed, ___ enormous difficulties.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "despite of",
+                    "in spite of",
+                    "although"
+                ],
+                "correct_answer": [
+                    "2"
+                ],
+                "question_order": 3,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "It's imperative that he ___ informed of the changes immediately.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "is",
+                    "be",
+                    "was"
+                ],
+                "correct_answer": [
+                    "2"
+                ],
+                "question_order": 4,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "No sooner had I arrived home ___ the phone rang.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "when",
+                    "than",
+                    "then"
+                ],
+                "correct_answer": [
+                    "2"
+                ],
+                "question_order": 5,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "The company's success is largely ___ to its innovative marketing strategies.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "due",
+                    "owing",
+                    "thanks"
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 6,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "He expressed his ___ regret for the misunderstanding.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "deep",
+                    "profound",
+                    "heavy"
+                ],
+                "correct_answer": [
+                    "2"
+                ],
+                "question_order": 7,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "Were she ___, she would speak to him herself.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "here",
+                    "to be here",
+                    "being here"
+                ],
+                "correct_answer": [
+                    "2"
+                ],
+                "question_order": 8,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "I would sooner you ___ me the truth.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "told",
+                    "tell",
+                    "have told"
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 9,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "He's renowned ___ his expertise in ancient history.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "for",
+                    "of",
+                    "about"
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 10,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "The government is committed ___ poverty in the region.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "to eradicating",
+                    "to eradicate",
+                    "eradicating"
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 11,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "Little ___ he know what awaited him.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "did",
+                    "does",
+                    "has" 
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 12,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "He's something of a recluse, ___ preferring his own company.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "hence",
+                    "thereby",
+                    "consequently"
+                ],
+                "correct_answer": [
+                    "2"
+                ],
+                "question_order": 13,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "I object ___ treated like a child.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "to being",
+                    "to be",
+                    "being"
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 14,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "They were on the ___ of signing the contract when a problem arose.",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "edge",
+                    "brink",
+                    "verge"
+                ],
+                "correct_answer": [
+                    "3"
+                ],
+                "question_order": 15,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "Choose the correct sentence:",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "The reason why he left was because he was tired.",
+                    "The reason he left was that he was tired.",
+                    "The reason he left was because of he was tired.",
+                    "The reason why he left was that he was tired."
+                ],
+                "correct_answer": [
+                    "2"
+                ],
+                "question_order": 16,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "Choose the correct sentence:",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "Should you require any further assistance, do not hesitate to contact us.",
+                    "If you would require any further assistance, do not hesitate to contact us.",
+                    "If you require any further assistance, do not hesitate contacting us.",
+                    "Should you require any further assistance, do not hesitate contacting us."
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 17,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "Choose the correct sentence:",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "Not until I saw it with my own eyes I believed it.",
+                    "Not until I saw it with my own eyes did I believe it.",
+                    "Not until I saw it with my own eyes, I believed it.",
+                    "Not until I saw it with my own eyes have I believed it."
+                ],
+                "correct_answer": [
+                    "2"
+                ],
+                "question_order": 18,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "Choose the correct sentence:",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "I had my car fixed yesterday.",
+                    "I had fixed my car yesterday.",
+                    "I had my car fix yesterday.",
+                    "I had my car being fixed yesterday."
+                ],
+                "correct_answer": [
+                    "1"
+                ],
+                "question_order": 19,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            },
+            {
+                "question_name": "Choose the correct sentence:",
+                "question_type": "multiple_choice",
+                "question_options": [
+                    "The committee is comprised of ten members.",
+                    "The committee comprises of ten members.",
+                    "The committee comprises ten members.",
+                    "The committee is comprised ten members."
+                ],
+                "correct_answer": [
+                    "3"
+                ],
+                "question_order": 20,
+                "Youtube_type": "single",
+                "question_points": "0.5"
+            }
+        ]
+    }
+}

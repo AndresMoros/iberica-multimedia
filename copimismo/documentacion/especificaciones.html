@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Especificaciones para crear los test &lpar;quiz&rpar;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="especificaciones-para-crear-los-test-quiz">Especificaciones para crear los test (quiz)</h1>
+<p>En el apartado de Choose your quiz type se escoge &quot;Quiz&quot; &gt; &quot;Default Theme&quot;.</p>
+<h1 id="pre-configuraciones">Pre-configuraciones</h1>
+<p>Seleccionamos el botón que dice <strong>&quot;Additional Form Settings&quot;</strong></p>
+<ul>
+<li>Grading System: Puntos</li>
+<li>Mostrar barra de progreso: Activado</li>
+</ul>
+<h1 id="páginas-y-preguntas-importante">Páginas y preguntas (importante)</h1>
+<h2 id="configuración-de-páginas">Configuración de páginas</h2>
+<p>Configurar la página para que no muestre el botón de la página anterior. Esto debe hacerse si es deseable que el usuario NO pueda volver a la pregunta anterior.</p>
+<h2 id="configuración-de-preguntas">Configuración de preguntas</h2>
+<p>Marcar la casilla que dice <em>&quot;Obligatorio&quot;</em>, así el usuario no podrá saltarse ninguna pregunta.</p>
+<h3 id="a-tener-en-cuenta">A tener en cuenta</h3>
+<p>Es necesario crear una nueva página por cada pregunta y hacer el paso de &quot;No mostrar botón de la página anterior&quot; con cada una, lo mismo para marcar cada pregunta como obligatoria.</p>
+<h3 id="mostrar-solo-una-pregunta-por-página">Mostrar solo una pregunta por página</h3>
+<p>Si se desea que el usuario pueda ir a la pregunta anterior modifica el valor en <em>Opciones &gt; Display &gt; Question Preferences</em> (por defecto es 0) por 1 o la cantidad de preguntas que se desea se muestren por pantalla. Con esto nos ahorramos crear una pantalla nueva por cada pregunta que quiera hacerse en el test.</p>
+<h1 id="configuraciones">Configuraciones</h1>
+<h2 id="texto">Texto</h2>
+<h3 id="general">General</h3>
+<ul>
+<li>Text Before Quiz: El contenido de <em>documentacion\html &amp; css\text_before_quiz\content.html</em></li>
+</ul>
+<h3 id="labels">Labels</h3>
+<ul>
+<li>Submit Button: Enviar test</li>
+<li>Retake Quiz Button: Reintentar <strong>(opcional)</strong></li>
+<li>Previus Button: Anterior</li>
+<li>Next Button: Siguiente</li>
+<li>Start Quiz Button: Empezar test</li>
+<li>No Answer Text: No hay respuesta</li>
+</ul>
+<h2 id="opciones">Opciones</h2>
+<h3 id="general-1">General</h3>
+<ul>
+<li>Randomize Question: Randomize questions and their answers</li>
+</ul>
+<h3 id="display">Display</h3>
+<ul>
+<li>
+<p>Quiz Page Settings:</p>
+<ul>
+<li>bounce (opcional)</li>
+<li>Display current page number of the quiz</li>
+<li>Do not scroll the page on clicking next/previous buttons</li>
+</ul>
+</li>
+<li>
+<p>Display the correct answer information in real-time <strong>(opcional)</strong></p>
+<ul>
+<li>Mostrar solo si la respuesta es correcta</li>
+<li>Mostrar siempre</li>
+<li>No mostrar nunca (por defecto)</li>
+</ul>
+</li>
+</ul>
+<h3 id="quiz-submission-opcional">Quiz Submission <strong>(opcional)</strong></h3>
+<p>Si no se quiere que el usuario pueda reintentar el Quiz, se debe desmarcar la opción en <em>Opciones &gt; Quiz Submission &gt; Quiz Controls &gt; Allow users to retake the quiz</em>, ya que por defecto lo permite.</p>
+<h2 id="página-de-resultados">Página de resultados</h2>
+<p>Usar las plantillas creadas y los estilos de <em>documentacion\html &amp; css\main.css</em></p>
+<h2 id="estilo">Estilo</h2>
+<p>Usar los estilos de <em>documentacion\html &amp; css\main.css</em></p>
+<h1 id="lógica-de-puntuaciones">Lógica de puntuaciones</h1>
+<p>Las puntuaciones se dividen en:</p>
+<h2 id="no-aprobado-0---5-puntos">No aprobado <em>(0 - 5 puntos)</em></h2>
+<p>Se incentiva al usuario a seguir practicando lo necesario para aprobar el test</p>
+<h2 id="casi-aprobado-55---75-puntos">Casi aprobado (<em>5.5 - 7.5 puntos)</em></h2>
+<p>Se incentiva al usuario a seguir practicando y se le comunica que estuvo muy cerca de pasar el test</p>
+<h2 id="aprobado-8---10-puntos">Aprobado <em>(8 - 10 puntos)</em></h2>
+<p>Se le comunica al usuario que ha aprobado satisfactoriamente el test</p>
+
+            
+            
+        </body>
+        </html>
