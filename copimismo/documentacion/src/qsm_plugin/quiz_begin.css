@@ -1,0 +1,28 @@
+@import url(../main.css);
+
+:root {
+    /* Colores de contenido */
+    --font-color: #0A2903;      /* Color para texto (principal) */
+    --sec-font-color: #1E720B;  /* Color para títulos/encabezados */
+    
+    /* Colores de maquetación */
+    --pri-color: #24890d;       /* Acento positivo */
+    --sec-color:  #def3d7;      /* Color de fondo  (principal) */
+    --alert-color: #E74C3C;     /* Color de Error/Alerta */
+    --lines-color: #D3E7CE;     /* Color de Borde/Separadores/Desactivado */
+    --contrast-color: #4FA03D;  /* Color de Resaltado/Selección */
+}
+
+/* Quiz Begin */
+
+.qsm-quiz-container {
+    background: var(--sec-color);
+    width: 400px;
+    margin: auto;
+    color: var(--font-color);
+    padding: 2rem;
+}
+
+.qsm-pagination {
+    margin: 0 !important;
+}

@@ -1,0 +1,152 @@
+/* Estilos genéricos */
+
+:root {
+    /* ----- Colores de contenido ----- */
+    --font-color: #0A2903;
+    /* Color para texto (principal) */
+
+    --sec-font-color: #1E720B;
+    /* Color para títulos/encabezados */
+
+    /* ----- Colores de maquetación ----- */
+    --pri-color: #24890d;
+    /* Acento positivo */
+
+    --sec-color: #def3d7;
+    /* Color de fondo  (principal) */
+
+    --alert-color: #E74C3C;
+    /* Color de Error/Alerta */
+
+    --lines-color: #D3E7CE;
+    /* Color de Borde/Separadores/Desactivado */
+
+    --contrast-color: #4FA03D;
+    /* Color de Resaltado/Selección */
+
+    --yellow-color:#ffcc00;;
+
+}
+
+.center_text {
+    text-align: center;
+    /* Centra el texto en el contenedor */
+}
+
+.uppercase_text {
+    text-transform: uppercase;
+    /* Coloca todo el texto en mayúsculas */
+}
+
+.cursive_text {
+    font-style: italic;
+    /* Coloca las letras en cursiva */
+}
+
+.bold_text {
+    font-weight: bold;
+}
+
+.alert_text {
+    color: var(--alert-color);
+}
+
+.yellow_text {
+    color: var(--yellow-color);
+}
+
+.assert_text {
+    color: var(--pri-color);
+}
+/* --------------- Quiz and Survey Master Classes --------------- */
+
+/* ---------- Contenedor de todas las páginas del Quiz ---------- */
+.qsm-quiz-container {
+    background: var(--sec-color);
+    width: 400px;
+    margin: auto;
+    color: var(--font-color);
+    padding: 2rem;
+}
+
+/* ---------- Contenedor de la progress bar y el botón de Siguiente ---------- */
+.qsm-pagination {
+    margin: 0 !important;
+}
+
+/* ---------- Botón genérico ---------- */
+
+.qsm-btn,
+.qsm-next,
+.qmn_btn,
+.mlw_qmn_quiz_link,
+.mlw_next,
+.mlw_custom_start {
+    min-width: max-content !important;
+    text-wrap: nowrap;
+    background: var(--pri-color) !important;
+/* ---------- Nota: Para que se apliquen estos estilos es necesario modificar la linea 465 en el archivo qmn_primary.css:
+
+Cómo está: 
+
+.qmn_quiz_container .qmn_btn, .qmn_quiz_container .btn {
+  color: #fff !important;
+  background: #3498db !important;
+}
+
+Cómo debe estar:
+
+.qmn_quiz_container .qmn_btn, .qmn_quiz_container .btn {
+  color: #fff;
+  background: #3498db;
+}
+
+Dirección del archivo:
+https://copimismo.es/wp-content/plugins/quiz-master-next/templates/qmn_primary.css
+
+*/
+}
+
+
+
+
+/* ---------- Progress bar ---------- */
+
+.qsm-progress-bar>svg>path {
+    stroke: var(--pri-color) !important;
+}
+
+/* ---------- Nota: Este es un estilo en línea, solo puede cambiarse en el HTML */
+
+/* ---------- Error message ---------- */
+
+.qmn_error_message {
+    color: var(--alert-color);
+    background: none !important;
+}
+
+.qmn_error_message,
+.qmn_radio_answers {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+/* ---------- Contenedor de respuesta ---------- */
+.qmn_mc_answer_wrap {
+    padding: .3rem 1rem;
+}
+
+.qmn_mc_answer_wrap:hover {
+    background: var(--lines-color);
+}
+
+/* ----------  Label de respuesta (seleccionable) ----------  */
+.qsm-input-label {
+    width: 100%;
+}
+
+/* ----------  Imagenes del Quiz ----------  */
+
+.qsm-featured-image {
+    padding: 1rem;
+}

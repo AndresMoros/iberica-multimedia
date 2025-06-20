@@ -1,0 +1,4 @@
+Edición de estilos de QSM:
+
+https://quizandsurveymaster.com/docs/advanced-topics/editing-design-styles-css/
+
