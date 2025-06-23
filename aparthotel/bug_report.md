@@ -1,5 +1,3 @@
-Enlaces:
-
 # Contenido no corresponde con la URL
 **Estado** [x] 
 https://aparthotelriuebre.com/podas-de-arboles-de-hoja-caduca-a-finales-de-invierno/
@@ -22,15 +20,32 @@ https://aparthotelriuebre.com/category/rio_ebro/podas/
 https://aparthotelriuebre.com/category/rio_ebro/ 
 
 # El sitemap tiene contenido que no corresponde
-**Estado** [] 
+**Estado** [x] 
 # Imagen del sitemap no corresponde
 **Estado** [x] 
 https://aparthotelriuebre.com/aviso-legal/sitemap/
 
 # El enlace de política de cookies no encuentra la página de cookies
-**Estado** [] 
+**Estado** [x] 
 https://aparthotelriuebre.com/aparthotelriuebre.com/aviso-legal/politica-de-cookies/ 
 
 # Imagen principal de Politica de privacidad no correspondiente:
 **Estado** [x] 
 https://aparthotelriuebre.com/aviso-legal/politica-de-privacidad/ 
+
+# Contenido de ultima entrada en el bloque FOOTER no se leía bien
+**Estado** [x] 
+Solución: Apariencia > Personalizar > CSS adicional:
+
+```css
+.entry-content > p,
+.post-meta-infos * {
+	color: #fff !important;
+}
+```
+
+# El enlace de Mapa de Sitio en el apartado de Accesibilidad redirigia a otro sitio web
+**Estado** [x] 
+
+# Referencias a un sitio externo en la propiedad _src_ de los inconos en la pagina Contacto
+**Estado** [x] 

@@ -1,0 +1,7 @@
+/* El siguiente contenido  está en Apariencia > Personalizar > CSS adicional */
+
+/* Footer block */
+.av-alb-blogposts .entry-content > p,
+.av-alb-blogposts .post-meta-infos * {
+	color: #fff !important;
+}

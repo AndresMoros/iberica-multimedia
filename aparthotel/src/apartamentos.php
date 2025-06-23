@@ -8,28 +8,28 @@
                 <p style="text-align: left;">Barcelona</p>
                 <p style="text-align: left;">Apartamentos de 1, 2 y 3 dormitorios</p>
                 <p style="text-align: left;">142 viviendas</p>
-                <p style="text-align: left;"><strong>Desde 150 &euro; / D&iacute;a</strong></p>
+                <p style="text-align: left;"><strong>Desde 150 € / Día</strong></p>
             </th>
-            <th class="col3" style="text-align: center;"><a href="#">M&aacute;s informaci&oacute;n</a></th>
+            <th class="col3" style="text-align: center;"><a href="#">Más información</a></th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="col1" style="text-align: center;"><strong>TIPO DE INMUEBLE</strong></td>
             <td class="col2" style="text-align: center;"><strong>DORMITORIOS</strong></td>
-            <td class="col3" style="text-align: center;"><strong>SUPERF&Iacute;CIE</strong></td>
+            <td class="col3" style="text-align: center;"><strong>SUPERFÍCIE</strong></td>
         </tr>
         <tr>
             <td class="col1" style="text-align: center;"><strong>Piso</strong></td>
             <td class="col2" style="text-align: center;"><strong>2</strong></td>
             <td class="col3">
-                <p style="text-align: center;"><strong>55m&sup2;</strong></p>
+                <p style="text-align: center;"><strong>55m²</strong></p>
             </td>
         </tr>
     </tbody>
 </table>
-<h3>&nbsp;</h3>
-<p dir="auto">&nbsp;</p>
+<h3></h3>
+<p dir="auto"></p>
 
 <table style="height: 276px;" width="757">
     <thead>
@@ -41,21 +41,21 @@
                 <p style="text-align: left;">Barcelona</p>
                 <p style="text-align: left;">Apartamentos de 1, 2 y 3 dormitorios</p>
                 <p style="text-align: left;">142 viviendas</p>
-                <p style="text-align: left;"><strong>Desde 190 &euro; / D&iacute;a</strong></p>
+                <p style="text-align: left;"><strong>Desde 190 € / Día</strong></p>
             </th>
-            <th class="col3"><a href="#">M&aacute;s informaci&oacute;n</a></th>
+            <th class="col3"><a href="#">Más información</a></th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="col1"><strong>TIPO DE INMUEBLE</strong></td>
             <td class="col2"><strong>DORMITORIOS</strong></td>
-            <td class="col3"><strong>SUPERF&Iacute;CIE</strong></td>
+            <td class="col3"><strong>SUPERFÍCIE</strong></td>
         </tr>
         <tr>
             <td class="col1" style="text-align: center;"><strong>Piso</strong></td>
             <td class="col2" style="text-align: center;">2</td>
-            <td class="col3" style="text-align: center;"><strong>55m&sup2;</strong></td>
+            <td class="col3" style="text-align: center;"><strong>55m²</strong></td>
         </tr>
     </tbody>
 </table>
@@ -69,28 +69,28 @@
                 <p style="text-align: left;">Barcelona</p>
                 <p style="text-align: left;">Apartamentos de 1, 2 y 3 dormitorios</p>
                 <p style="text-align: left;">142 viviendas</p>
-                <p style="text-align: left;"><strong>Desde 200 &euro; / D&iacute;a</strong></p>
+                <p style="text-align: left;"><strong>Desde 200 € / Día</strong></p>
             </th>
-            <th class="col3" style="text-align: center;"><a href="#">M&aacute;s informaci&oacute;n</a></th>
+            <th class="col3" style="text-align: center;"><a href="#">Más información</a></th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="col1" style="text-align: center;"><strong>TIPO DE INMUEBLE</strong></td>
             <td class="col2" style="text-align: center;"><strong>DORMITORIOS</strong></td>
-            <td class="col3" style="text-align: center;"><strong>SUPERF&Iacute;CIE</strong></td>
+            <td class="col3" style="text-align: center;"><strong>SUPERFÍCIE</strong></td>
         </tr>
         <tr>
             <td class="col1" style="text-align: center;"><strong>Piso</strong></td>
             <td class="col2" style="text-align: center;"><strong>2</strong></td>
             <td class="col3">
-                <p style="text-align: center;"><strong>55m&sup2;</strong></p>
+                <p style="text-align: center;"><strong>55m²</strong></p>
             </td>
         </tr>
     </tbody>
 </table>
-<h3>&nbsp;</h3>
-<p dir="auto">&nbsp;</p>
+<h3></h3>
+<p dir="auto"></p>
 
 <table>
     <thead>
@@ -102,21 +102,21 @@
                 <p style="text-align: left;">Barcelona</p>
                 <p style="text-align: left;">Apartamentos de 1, 2 y 3 dormitorios</p>
                 <p style="text-align: left;">142 viviendas</p>
-                <p style="text-align: left;"><strong>Desde 180 &euro; / D&iacute;a</strong></p>
+                <p style="text-align: left;"><strong>Desde 180 € / Día</strong></p>
             </th>
-            <th class="col3"><a href="#">M&aacute;s informaci&oacute;n</a></th>
+            <th class="col3"><a href="#">Más información</a></th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="col1"><strong>TIPO DE INMUEBLE</strong></td>
             <td class="col2"><strong>DORMITORIOS</strong></td>
-            <td class="col3"><strong>SUPERF&Iacute;CIE</strong></td>
+            <td class="col3"><strong>SUPERFÍCIE</strong></td>
         </tr>
         <tr>
             <td class="col1" style="text-align: center;"><strong>Piso</strong></td>
             <td class="col2" style="text-align: center;">2</td>
-            <td class="col3" style="text-align: center;"><strong>55m&sup2;</strong></td>
+            <td class="col3" style="text-align: center;"><strong>55m²</strong></td>
         </tr>
     </tbody>
 </table>
@@ -130,28 +130,28 @@
                 <p style="text-align: left;">Barcelona</p>
                 <p style="text-align: left;">Apartamentos de 1, 2 y 3 dormitorios</p>
                 <p style="text-align: left;">142 viviendas</p>
-                <p style="text-align: left;"><strong>Desde 300 &euro; / D&iacute;a</strong></p>
+                <p style="text-align: left;"><strong>Desde 300 € / Día</strong></p>
             </th>
-            <th class="col3" style="text-align: center;"><a href="#">M&aacute;s informaci&oacute;n</a></th>
+            <th class="col3" style="text-align: center;"><a href="#">Más información</a></th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="col1" style="text-align: center;"><strong>TIPO DE INMUEBLE</strong></td>
             <td class="col2" style="text-align: center;"><strong>DORMITORIOS</strong></td>
-            <td class="col3" style="text-align: center;"><strong>SUPERF&Iacute;CIE</strong></td>
+            <td class="col3" style="text-align: center;"><strong>SUPERFÍCIE</strong></td>
         </tr>
         <tr>
             <td class="col1" style="text-align: center;"><strong>Piso</strong></td>
             <td class="col2" style="text-align: center;"><strong>2</strong></td>
             <td class="col3">
-                <p style="text-align: center;"><strong>55m&sup2;</strong></p>
+                <p style="text-align: center;"><strong>55m²</strong></p>
             </td>
         </tr>
     </tbody>
 </table>
-<h3>&nbsp;</h3>
-<p dir="auto">&nbsp;</p>
+<h3></h3>
+<p dir="auto"></p>
 
 <table>
     <thead>
@@ -163,21 +163,21 @@
                 <p style="text-align: left;">Barcelona</p>
                 <p style="text-align: left;">Apartamentos de 1, 2 y 3 dormitorios</p>
                 <p style="text-align: left;">142 viviendas</p>
-                <p style="text-align: left;"><strong>Desde 200 &euro; / D&iacute;a</strong></p>
+                <p style="text-align: left;"><strong>Desde 200 € / Día</strong></p>
             </th>
-            <th class="col3"><a href="#">M&aacute;s informaci&oacute;n</a></th>
+            <th class="col3"><a href="#">Más información</a></th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="col1"><strong>TIPO DE INMUEBLE</strong></td>
             <td class="col2"><strong>DORMITORIOS</strong></td>
-            <td class="col3"><strong>SUPERF&Iacute;CIE</strong></td>
+            <td class="col3"><strong>SUPERFÍCIE</strong></td>
         </tr>
         <tr>
             <td class="col1" style="text-align: center;"><strong>Piso</strong></td>
             <td class="col2" style="text-align: center;">2</td>
-            <td class="col3" style="text-align: center;"><strong>55m&sup2;</strong></td>
+            <td class="col3" style="text-align: center;"><strong>55m²</strong></td>
         </tr>
     </tbody>
 </table>
