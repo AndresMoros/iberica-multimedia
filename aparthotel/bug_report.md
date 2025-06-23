@@ -1,37 +1,41 @@
-# Contenido no corresponde con la URL
+# 22/06/2025
+
+## Contenido no corresponde con la URL
 **Estado** [x] 
 https://aparthotelriuebre.com/podas-de-arboles-de-hoja-caduca-a-finales-de-invierno/
 Enlace nuevo: https://aparthotelriuebre.com/comidad-aparthotel-barcelos-rioebro/
 
-# El contenido de algunas tablas está descolocado**
+## El contenido de algunas tablas está descolocado**
 **Estado** []
-# El final de la pagina tiene dos contenedores sin texto
+## El final de la pagina tiene dos contenedores sin texto
 **Estado** [x]
-# Cambiar precio de commpra por precio de alquiler
+## Cambiar precio de commpra por precio de alquiler
 **Estado** [x]
 https://aparthotelriuebre.com/apartamentos/
 
-# Existe la categoria "podas" en el blog"
+## Existe la categoria "podas" en el blog"
 **Estado** [x] 
 https://aparthotelriuebre.com/category/rio_ebro/podas/
 
-# Hay enlaces a redes sociales del creador de el tema usado para la web
+## Hay enlaces a redes sociales del creador de el tema usado para la web
 **Estado** [x] 
 https://aparthotelriuebre.com/category/rio_ebro/ 
 
-# El sitemap tiene contenido que no corresponde
+## El sitemap tiene contenido que no corresponde
 **Estado** [x] 
-# Imagen del sitemap no corresponde
+## Imagen del sitemap no corresponde
 **Estado** [x] 
 https://aparthotelriuebre.com/aviso-legal/sitemap/
 
-# El enlace de política de cookies no encuentra la página de cookies
+## El enlace de política de cookies no encuentra la página de cookies
 **Estado** [x] 
 https://aparthotelriuebre.com/aparthotelriuebre.com/aviso-legal/politica-de-cookies/ 
 
-# Imagen principal de Politica de privacidad no correspondiente:
+## Imagen principal de Politica de privacidad no correspondiente:
 **Estado** [x] 
 https://aparthotelriuebre.com/aviso-legal/politica-de-privacidad/ 
+
+# 23/06/2025
 
 # Contenido de ultima entrada en el bloque FOOTER no se leía bien
 **Estado** [x] 
@@ -49,3 +53,9 @@ Solución: Apariencia > Personalizar > CSS adicional:
 
 # Referencias a un sitio externo en la propiedad _src_ de los inconos en la pagina Contacto
 **Estado** [x] 
+
+# Arreglado el servicio de correos electrónicos
+**Estado:** [x]
+Se configuró correctamente la función del tema Enfold
+
+## Error
