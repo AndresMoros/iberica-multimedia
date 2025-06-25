@@ -1,0 +1,1480 @@
+/*
+	SAAS input file for generating minified reports stylesheet 
+	command line:
+	sass report.scss report-min-20240912.css --style=compressed
+
+	the minified version date needs changed when changes are made
+	to the stylesheet
+
+	NOTE: build 792 linked to report.css and not report-min-20170817.css	
+	it was live for 6 weeks until 26 Aug 2017 and 7 Oct 2017 
+*/
+
+$font-stack: Arial, Helvetica, sans-serif;
+
+/* IE11 default a:link style is only 5.6 contrast ratio - use Chrome defaults instead */
+$default-background-color: #fff;
+$default-nav-background-color: #f8f8f8;
+$default-subnav-background-color: #f8f8f8;
+$default-text-color: #333;
+$default-tab-color: rgb(83, 54, 209);
+$default-tab-background-color: #fff;
+$default-tab-border-color: #aaa;
+$default-selected-tab-color: #fff;
+$default-selected-tab-background-color: rgb(83, 54, 209);
+$default-subtab-color: rgb(83, 54, 209);
+$default-subtab-background-color: transparent;
+$default-subtab-border-color: #aaa;
+$default-selected-subtab-color: #000;
+$default-selected-subtab-background-color: #fff;
+$default-dhtml-color: #eeeeff;
+$default-link-color: rgb(83, 54, 209);
+$default-visited-color: rgb(85, 26, 139);
+$default-ok-color: black;
+$default-error-color: rgb(174,0,0); /* rgb(255,0,0) on white fails WCAG AA contrast test */
+$default-code-background-color: #f8f8f8;
+$default-code-border-color: #ddd;
+$default-code-error-text-color: rgb(128,0,0);
+$default-button-text-color: #000;
+$default-button-border-color: #ccc;
+$default-button-hover-background-color: #f0f0f0;
+$default-button-hover-border-color: #c0c0c0;
+$default-aside-background-color: #f7f7f7;
+$default-aside-text-color: #000;
+$default-aside-border-color: #e0e0e0;
+$default-aside-code-background-color: #efefef;
+$default-th-background-color: #ddd;
+$default-th-border-color: white;
+
+$dark-background-color: #262424;
+$dark-nav-background-color: #303030;
+$dark-subnav-background-color: #303030;
+$dark-text-color: #ccc;
+$dark-tab-color: #fff;
+$dark-tab-background-color: #474747;
+$dark-selected-tab-background-color: rgb(83, 54, 209);
+$dark-subtab-background-color: #3c3c3c;
+$dark-selected-subtab-background-color: #262424;
+$dark-dhtml-color: #001;
+$dark-link-color: #87ceff;
+$dark-visited-color: #8793ff;
+$dark-ok-color: rgb(0,0,0);
+$dark-error-color: rgb(255,128,128); /* rgb(255,128,128) on #333 passes WCAG AA contrast test */
+$dark-code-background-color: #333;
+$dark-code-border-color: #444;
+$dark-code-error-text-color: rgb(255,128,128);
+$dark-button-text-color: #fff;
+$dark-button-border-color: #444;
+$dark-button-hover-background-color: #222;
+$dark-button-hover-border-color: #555;
+$dark-aside-background-color: #303030;
+$dark-aside-text-color: #fff;
+$dark-aside-border-color: #444;
+$dark-aside-code-background-color: #444;
+$dark-th-background-color: #303030;
+$dark-th-border-color: #262424;
+
+
+/* corrects block display not defined in IE6/7/8/9 */
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display:block;
+}
+
+/* default body and link colors - may be overridden by media queries */
+body {
+	background: $default-background-color;
+	color: $default-text-color;
+	font-family: $font-stack;
+}
+
+a:link {
+	color: $default-link-color;
+}
+
+a:visited {
+	color: $default-visited-color;
+}
+
+/* override default focus indicator to make more visible on all browsers */
+button:focus, a:focus, input:focus, select:focus, textarea:focus
+{
+    outline: 2px dotted currentcolor;
+    outline-offset: 2px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body.report {
+	line-height: 1.3;
+}
+
+body.source {
+	font-size: 0.95em; 
+	margin:1em;
+}
+
+html.saas-web-val body {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+html.eval-web-val body {
+	padding-left: 0;
+	padding-right: 10%;
+}
+
+body.report code {
+    font: inherit;
+    padding: 0 2px;
+	border-radius: 2px;
+    border: 1px solid $default-code-border-color;
+    background-color: $default-code-background-color;
+}
+
+/* don't show location code with borders if there's a code snippet after (looks too busy) */
+/*
+body.report td code:has( ~ pre ) {
+    border: none;
+	padding: 0;
+	margin: 0;
+    background-color: transparent;
+}
+*/
+
+/*
+table.issues tr td:not([class]) {
+	padding-top: 0;
+	was-padding-bottom: 0;
+}
+*/
+
+/* code in ``` fenced sections which is used for snippets */
+body.report td {
+	line-height: 120%;
+}
+
+body.report td pre, body.source aside pre {
+    font-family: inherit;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.25em;
+    white-space: pre-wrap;
+	border-radius: 0.25em;
+    border: 1px solid $default-code-border-color;
+    background-color: $default-code-background-color;
+	width: fit-content;
+	max-width: 90%
+}
+
+body.report td pre:first-child {
+	margin-top: 0;
+}
+  
+body.report td pre code, body.source aside pre code {
+	background-color: transparent;
+	border: none;
+}
+
+/*
+body.report td pre:hover {
+    white-space: pre-wrap;
+}
+*/
+
+/*
+body.report td pre code {
+	padding: 4px;
+	border-radius: 4px;
+}
+*/
+
+body.report td mark, body.source aside mark {
+	color: $default-code-error-text-color;
+	/*
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+	*/
+	background-color: transparent;
+	border-bottom: 1px dotted red;
+}
+
+body.report td p {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+body.report code svg {
+	vertical-align: text-bottom;
+}
+
+body.report td:not(.desc) code {
+    /*margin-right: 0.25em;*/
+}
+
+/* needed for build 792 (not used in later builds, but see note above) */
+body:not([class]) main:not([class]) {
+    padding: 0 20px;
+    margin-top: 20px;	
+}
+
+/* view source header */ 
+header, aside { border-radius:10px; margin-bottom:10px; margin-top:4em; position:relative; z-index:1; top:0; left:0; width:90%; padding:6px; color:$default-aside-text-color; background-color:$default-aside-background-color; border:1px solid $default-aside-border-color; font-family:Arial, Helvetica, sans-serif; float:left; clear:both;  }
+header, aside + aside { margin-top: 10px; }
+header h1 { margin:0; margin-bottom: 1em; padding-left: 4px; }
+header table { margin: 0; }
+header th { text-align: left; font-weight: normal; font-style: normal; background-color: $default-aside-background-color; border:0; padding:0; padding-left: 4px; }
+header td { padding:2px; }
+header tr { vertical-align: top; }
+header tr.middle { vertical-align: middle; }
+header tr.middle img { vertical-align: middle; }
+header div.links { display: none; width: 100%; }
+
+/* view source issue box */ 
+aside { white-space: normal; padding-left: 40px; }
+aside img { margin-left: -30px; padding-right: 10px; vertical-align: middle; }
+aside div { margin-bottom: 1em; }
+aside button.menu { width: 10em; }
+aside code {
+    font: inherit;
+    padding: 0 2px;
+	border: 1px solid $default-code-border-color;
+	background-color: $default-aside-code-background-color;
+}
+
+/* view source code */
+main.pre { color: $default-text-color; white-space: pre; font-family: monospace; clear: both; }
+main.pre code.dhtml { background-color: $default-dhtml-color; font-weight: bold; }
+main.pre > p { margin:0; clear: both; }
+main.pre > p code { display: inline-block; width: 90%; font-size: 1em; }
+main.pre > p code:first-child { width: 4em; clear: both; }
+main.pre p.embed { clear:both; }
+main.pre p.embed iframe { width:100%; height:1800px; }
+main.pre span.ok { text-decoration: none; color: $default-ok-color; } 
+main.pre span.err { text-decoration: dotted underline $default-error-color; color: $default-error-color; }
+
+
+/* main report nav bar styles */
+div#header {
+	width: 100%;
+	height: 42px;
+	background-color: $default-nav-background-color;
+	padding: 0;
+	margin: 0;
+	padding-top: 8px;
+	padding-left: 16px;
+	clear: both;
+}
+
+html.saas-web-val div#header,  html.eval-web-val div#header {
+	/* remove header background in app.powermapper.com and try.powermapper.com */
+	background: none;
+	padding-left: 0;
+}
+
+#header ul {
+	width: 100%;
+	padding: 0;
+	float:left;
+	margin: 0;
+	list-style: none;
+	background: transparent;
+}
+
+#header ul li {
+	display: block;
+	float: left;
+	height: 19px;
+	color: $default-tab-color;
+	padding: 10px;
+	margin: 0;
+	margin-right: 10px;
+	border: 1px solid $default-tab-border-color;
+	border-radius: 5px;
+	background-color: $default-tab-background-color;
+	background-position: 0% 100%;
+}
+
+#header ul li.selected, #header ul li:hover {
+	color: $default-selected-tab-color;
+	background-color: $default-selected-tab-background-color;
+}
+
+#header ul li#menu-page-link {
+	border: none;
+	background: none;
+}
+
+#header ul li#menu-page-link a, #header ul li#menu-page-link a:hover {
+	color: $default-link-color;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+div#tab-summary {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+div.subnav {
+	width: 100%;
+	height: 39px;
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+	padding-left: 16px;
+	clear: both;
+	background-color: $default-subnav-background-color;
+	border-bottom: solid 1px $default-subtab-border-color;
+}
+
+html.saas-web-val div.subnav,  html.eval-web-val div.subnav {
+	padding-left: 8px;
+	background-color: transparent;
+}
+
+div.subnav ul {
+	padding: 0;
+	list-style: none;
+	margin: 6px;
+	margin-left: 0;
+}
+
+div.subnav ul li {
+	display: block;
+	float: left;
+	height: 19px;
+	margin: 0;
+	margin-right: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	color: $default-subtab-color;
+	background-color: $default-subtab-background-color;
+	border: 1px solid transparent;
+	border-bottom: 3px none transparent;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+div.subnav ul li.selected, div.subnav ul li:hover {
+	color: $default-selected-subtab-color;
+	background-color: $default-selected-subtab-background-color;
+	border-color: $default-subtab-border-color;
+	border-bottom: 3px solid $default-subtab-background-color;
+}
+
+div#header a, div.subnav a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+	font-size: 90%;
+	padding-inline: 5px;
+	padding-bottom: 30px;
+}
+
+#header ul li.selected a {
+    color: $default-selected-tab-color;
+}
+
+a#menu-summary
+{
+}
+
+a#menu-issues
+{
+}
+
+a#menu-all
+{
+}
+
+/* end nav bar styles */
+
+/* mobile / desktop toggle styles (used for abbreviated tab labels on mobile) */
+span.desktop
+{
+	display: inline;
+}
+
+span.mobile
+{
+	display: none;
+}
+
+img { border: 0; }
+
+img.absmiddle { vertical-align: middle; }
+img.top { vertical-align: top; }
+
+img.benchmark
+{
+	vertical-align: top; 
+	padding-right: 10px;
+}
+
+body.report main 
+{
+	background: $default-background-color;
+	padding: 0 20px;
+	margin-top: 20px;
+	clear: both;
+}
+
+html.saas-web-val body.report main,  html.eval-web-val body.report main {
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 0.2em 0;
+	/*font-family: arial, verdana, sans-serif;*/
+}
+
+li h1, li h2, li h3, li h4, li h5, li h6 {
+	border: none;
+}
+
+table {
+	border-collapse: collapse;
+	border: none;
+	margin: 1em 0;
+}
+
+/* need a non-TH style to avoid TH repetition in screen readers */
+th, td.section {
+	font-weight: bold;
+	padding: 5px;
+	text-align: left;
+	border-bottom: 5px solid $default-th-border-color;
+	border-top: 5px solid $default-th-border-color;
+}
+
+td table th {
+	border: none;
+	background: white;
+}
+
+td {
+	/*font-size: 85%;*/
+	padding: 5px;
+	text-align: left;
+}
+
+tfoot td
+{
+	padding-top: 1em;
+}
+
+table.errmap {
+	padding: 0;
+	margin: 0;
+	/*border: 1px solid #eeeeee;*/
+}
+
+table.errmap td {
+	/*font-size: 95%;*/
+	padding: 0;
+	margin: 0;
+	padding-left: 10px;
+	text-align: left;
+}
+
+table.dashboard tr {
+	vertical-align: center;
+}
+
+table.inventory {
+	table-layout:fixed;
+}
+
+table.issues {
+	table-layout:fixed;
+}
+
+table.pages {
+	/*border-spacing: 0 0.5em;*/
+    /*border-collapse: separate;*/
+}
+
+table.pages tr.desc td {
+	padding-top: 1em;
+}
+
+table.pages tr.desc td.p1,
+table.pages tr.desc td.p2,
+table.pages tr.desc td.p3,
+table.pages tr.desc td.p4,
+table.pages tr.desc td.p5,
+table.pages tr.desc td.p6 
+{
+	background-position-y: 1em;
+}
+
+table.issues tr td {
+	/* text-overflow is part of CSS3 standard and currently supported by IE7, Safari and Konqueror (but not Firefox) */
+	text-overflow:ellipsis;
+	overflow:hidden;
+	vertical-align: top;
+}
+
+table.issues tbody.expando tr:last-child td
+{
+	padding-bottom: 1.5em;
+}
+
+
+table.issues,
+table.inventory
+{
+	width: 100%;
+	max-width: 100em;
+}
+
+table.inventory col:nth-of-type(1) { width:20%; }
+table.inventory col:nth-of-type(2) { width:10%; }
+table.inventory col:nth-of-type(3) { width:70%; }
+
+table.issues col.priority { width: 7%; min-width: 61px; }
+table.issues col.description { width: 63%; }
+table.issues col.location { width: 20%; }
+table.issues col.count { width: 10%; min-width: 6.8em; }
+
+table.issues th,
+table.inventory th
+{
+	overflow: hidden;
+}
+
+table.compat th {
+	padding: 5px;
+	text-align: center;
+	border: none;
+	white-space: nowrap;
+}
+
+table.compat td {
+	text-align: center;
+}
+
+table.compat th.section {
+	border-left: 1px solid $default-th-border-color;
+}
+
+table.compat th.key {
+	background: none;
+}
+
+table.compat td.key {
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 40px;
+}
+
+table.compat th.side {
+	text-align: right;
+	font-weight: normal;
+}
+
+table.compat th.side-section {
+	text-align: right;
+	font-weight: normal;
+	border-top: 1px solid white;
+}
+
+table.compat th.side-summary {
+	text-align: right;
+	font-weight: bold;
+	border-top: 1px solid white;
+}
+
+table.compat td.summary {
+	text-align: center;
+	font-weight: bold;
+}
+
+td.compat-err
+{
+	background: #d22;
+	text-align: center;
+	border: 1px solid white;
+}
+td.compat-warn
+{
+	background: #fa2;
+	text-align: center;
+	border: 1px solid white;
+}
+
+svg.graph
+{
+	width: 102px; 
+	height: 18px; 
+	-ms-high-contrast-adjust: none;	
+}
+
+rect.graph-err
+{
+	fill: #d22;
+	stroke: #900;
+	stroke-width: 0.5px;
+	-ms-high-contrast-adjust: none;	
+}
+
+rect.graph-warn
+{
+	stroke: #b60;
+	stroke-width: 0.5px;
+	-ms-high-contrast-adjust: none;	
+}
+
+line.graph-warn 
+{
+	stroke: #fa2;
+	stroke-width: 19px;
+	-ms-high-contrast-adjust: none;
+}
+
+rect.graph-ok
+{
+	fill: #eeeeee;
+	stroke: #eeeeee;
+	stroke-width: 0.5px;
+	-ms-high-contrast-adjust: auto;		
+}
+
+.graph-0 { width:0%; }
+.graph-1 { width:1%; }
+.graph-2 { width:2%; }
+.graph-3 { width:3%; }
+.graph-4 { width:4%; }
+.graph-5 { width:5%; }
+.graph-6 { width:6%; }
+.graph-7 { width:7%; }
+.graph-8 { width:8%; }
+.graph-9 { width:9%; }
+.graph-10 { width:10%; }
+.graph-11 { width:11%; }
+.graph-12 { width:12%; }
+.graph-13 { width:13%; }
+.graph-14 { width:14%; }
+.graph-15 { width:15%; }
+.graph-16 { width:16%; }
+.graph-17 { width:17%; }
+.graph-18 { width:18%; }
+.graph-19 { width:19%; }
+.graph-20 { width:20%; }
+.graph-21 { width:21%; }
+.graph-22 { width:22%; }
+.graph-23 { width:23%; }
+.graph-24 { width:24%; }
+.graph-25 { width:25%; }
+.graph-26 { width:26%; }
+.graph-27 { width:27%; }
+.graph-28 { width:28%; }
+.graph-29 { width:29%; }
+.graph-30 { width:30%; }
+.graph-31 { width:31%; }
+.graph-32 { width:32%; }
+.graph-33 { width:33%; }
+.graph-34 { width:34%; }
+.graph-35 { width:35%; }
+.graph-36 { width:36%; }
+.graph-37 { width:37%; }
+.graph-38 { width:38%; }
+.graph-39 { width:39%; }
+.graph-40 { width:40%; }
+.graph-41 { width:41%; }
+.graph-42 { width:42%; }
+.graph-43 { width:43%; }
+.graph-44 { width:44%; }
+.graph-45 { width:45%; }
+.graph-46 { width:46%; }
+.graph-47 { width:47%; }
+.graph-48 { width:48%; }
+.graph-49 { width:49%; }
+.graph-50 { width:50%; }
+.graph-51 { width:51%; }
+.graph-52 { width:52%; }
+.graph-53 { width:53%; }
+.graph-54 { width:54%; }
+.graph-55 { width:55%; }
+.graph-56 { width:56%; }
+.graph-57 { width:57%; }
+.graph-58 { width:58%; }
+.graph-59 { width:59%; }
+.graph-60 { width:60%; }
+.graph-61 { width:61%; }
+.graph-62 { width:62%; }
+.graph-63 { width:63%; }
+.graph-64 { width:64%; }
+.graph-65 { width:65%; }
+.graph-66 { width:66%; }
+.graph-67 { width:67%; }
+.graph-68 { width:68%; }
+.graph-69 { width:69%; }
+.graph-70 { width:70%; }
+.graph-71 { width:71%; }
+.graph-72 { width:72%; }
+.graph-73 { width:73%; }
+.graph-74 { width:74%; }
+.graph-75 { width:75%; }
+.graph-76 { width:76%; }
+.graph-77 { width:77%; }
+.graph-78 { width:78%; }
+.graph-79 { width:79%; }
+.graph-80 { width:80%; }
+.graph-81 { width:81%; }
+.graph-82 { width:82%; }
+.graph-83 { width:83%; }
+.graph-84 { width:84%; }
+.graph-85 { width:85%; }
+.graph-86 { width:86%; }
+.graph-87 { width:87%; }
+.graph-88 { width:88%; }
+.graph-89 { width:89%; }
+.graph-90 { width:90%; }
+.graph-91 { width:91%; }
+.graph-92 { width:92%; }
+.graph-93 { width:93%; }
+.graph-94 { width:94%; }
+.graph-95 { width:95%; }
+.graph-96 { width:96%; }
+.graph-97 { width:97%; }
+.graph-98 { width:98%; }
+.graph-99 { width:99%; }
+.graph-100 { width:100%; }
+
+.bench
+{
+	border: none;
+	padding: 0;
+	/*spacing: 0;*/
+}
+table.bench
+{
+	height: 8px;
+	/*spacing: 0;*/
+	padding: 0;
+	border: none;
+}
+.bench-bad
+{
+	font-size: 10%;
+	background-color: #770000;
+	border: none;
+}
+.bench-good
+{
+	font-size: 10%;
+	background-color: #eeeeee;
+	border: none;
+}
+tr.disabled
+{
+	color: rgb(118, 118, 118);
+}
+
+main.report code
+{
+	margin-top: 4px;
+	display: block;
+	font-family: sans-serif;
+}
+
+button.chevron
+{
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+
+	border-radius: 4px;
+	border: 1px solid transparent;
+	background: none;	
+}
+
+tr:hover button.chevron
+{
+	border-color: $default-button-hover-border-color;
+	background-color: $default-button-hover-background-color;
+}
+
+tr button.ruleOptions span.disabled,
+tr button.ruleOptions span.enabled
+{
+    display: none;
+	-ms-high-contrast-adjust: none;	
+}
+
+tr:not(.disabled) button.ruleOptions span.enabled,
+tr.disabled button.ruleOptions span.disabled
+{
+    display: inline;
+	-ms-high-contrast-adjust: none;	
+}
+
+tr button.ruleOptions span.disabled
+{
+    display: none;
+}
+
+tr.disabled button.ruleOptions span.disabled
+{
+    display: inline;
+}
+
+.accessible
+{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	display:inline;
+}
+
+.hidden
+{
+	display: none;
+}
+
+iframe#iframeSpelling
+{
+	width:0;
+	height:0;
+	border:0 solid white;
+}
+
+button.menu
+{
+	border-radius: 4px;
+	font-size: 1em;
+	width: 5.5em;
+	margin: 0;
+
+	color: $default-button-text-color;
+	background-color: $default-background-color;
+	border: 1px solid $default-button-border-color;
+}
+
+button.menu:hover
+{
+	color: $default-button-text-color;
+	border-color: $default-button-hover-border-color;
+	background-color: $default-button-hover-background-color;
+}
+
+a.viewsource
+{
+}
+
+a.viewsource-disabled
+{
+	text-decoration: none;
+	color: #333;
+	background-color: white;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+strong.disabled
+{
+	color: rgb(118, 118, 118);
+}
+
+a.spell-bad
+{
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px dotted red;
+}
+a.spell-good
+{
+	text-decoration: line-through;
+	color: gray;
+	border-bottom: none;
+}
+
+td.p1 
+{
+	background: url(p1.png) no-repeat 5% 5px;
+	background-image: linear-gradient(transparent, transparent), url(p1.svg);
+	width: 16px;
+	min-height: 16px;
+	-ms-high-contrast-adjust: none;
+}
+
+td.p2
+{
+	background: url(p2.png) no-repeat 5% 5px;
+	background-image: linear-gradient(transparent, transparent), url(p2.svg);
+	width: 16px;
+	min-height: 16px;
+	-ms-high-contrast-adjust: none;	
+}
+
+td.p3
+{
+	background: url(p3.png) no-repeat 5% 5px;
+	background-image: linear-gradient(transparent, transparent), url(p3.svg);
+	width: 16px;
+	min-height: 16px;
+	-ms-high-contrast-adjust: none;
+}
+
+td.p4
+{
+	background: url(p4.png) no-repeat 5% 5px;
+	background-image: linear-gradient(transparent, transparent), url(p4.svg);
+	width: 16px;
+	min-height: 16px;
+	-ms-high-contrast-adjust: none;	
+}
+
+td.p5
+{
+	background: url(p5.png) no-repeat 5% 5px;
+	background-image: linear-gradient(transparent, transparent), url(p5.svg);
+	width: 16px;
+	min-height: 16px;
+	-ms-high-contrast-adjust: none;	
+}
+
+td.p6
+{
+	background: url(p6.png) no-repeat 5% 5px;
+	background-image: linear-gradient(transparent, transparent), url(p6.svg);
+	width: 16px;
+	min-height: 16px;
+	-ms-high-contrast-adjust: none;	
+}
+
+td.ok
+{
+	background: url(bench-better.png) no-repeat 2% center;
+	background-image: linear-gradient(transparent, transparent), url(bench-better.svg);
+	min-height: 16px;
+	padding-left: 30px;
+	-ms-high-contrast-adjust: none;	
+}
+
+td.issue
+{
+	background: url(bench-worse.png) no-repeat 2% center;
+	background-image: linear-gradient(transparent, transparent), url(bench-worse.svg);
+	min-height: 16px;
+	padding-left: 30px;
+	-ms-high-contrast-adjust: none;	
+}
+
+.nowrap
+{
+	white-space: nowrap;
+}
+
+th.benchmark
+{
+	text-align: right;
+}
+
+tbody.expando
+{
+	display: none;
+}
+
+ul.summary {
+	list-style-type: none;
+	padding-left: 0;
+	width: 100%;
+	max-width: 100em;
+}
+
+ul.summary li {
+	padding: 5px;
+}
+
+ul.summary span {
+	width: 7%;
+	min-width: 50px;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul.summary img {
+	padding: 0;
+	margin: 0;
+}
+
+svg .title
+{
+	/* don't set color: black; - breaks dark mode and high contrast mode */
+	text-align: center; 
+	font-weight: bold; 
+	font-size: 100%;
+}
+
+svg .frame
+{
+	stroke: #ccc;
+	stroke-width: 1;
+	fill: none;	
+}
+
+svg line.red
+{
+	stroke: #d22;
+	stroke-width: 3;
+	stroke-dasharray: 3,3;
+	fill: none; 
+}
+
+svg line.orange
+{
+	stroke: #fa2;
+	stroke-width: 3;
+	stroke-dasharray: 2,3;
+	fill: none; 
+}
+
+svg circle.red
+{
+	stroke: #900;
+	stroke-width: 1;
+	fill: #d22; 
+}
+
+svg circle.orange
+{
+	stroke: #b60;
+	stroke-width: 1;
+	fill: #fa2;
+}
+
+/*****************************************************************************
+	Responsive Styles
+****************************************************************************/
+
+@media only screen and (max-width: 480px)
+{
+	/* match margins to powermapper.com */
+	body.report main {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	
+	div#header {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		height: 80px;
+	}
+
+	div.subnav,
+	html.saas-web-val div.subnav,
+	html.eval-web-val div.subnav
+	{
+		padding-left: 0.5em;
+		padding-right: 0;
+	}
+	
+	div.subnav ul li
+	{
+		margin-right: 3px;
+		padding-left: 2px;
+		padding-right: 2px;
+		text-overflow: ellipsis;
+		font-size: 0.85em;
+		line-height: 1.5em;
+	}
+
+	/* one item */
+	div.subnav ul li:first-child:nth-last-child(1) 
+	{
+		max-width: 100vw;
+	}
+
+	/* two items */
+	div.subnav ul li:first-child:nth-last-child(2),
+	div.subnav ul li:first-child:nth-last-child(2) ~ li 
+	{
+		max-width: 50vw;
+	}
+
+	/* three items */
+	div.subnav ul li:first-child:nth-last-child(3),
+	div.subnav ul li:first-child:nth-last-child(3) ~ li 
+	{
+		max-width: 33vw;
+	}
+
+	span.optional
+	{
+		display: none;
+	}
+
+	span.desktop
+	{
+		display: none;
+	}
+
+	span.mobile
+	{
+		display: inline;
+	}
+	
+	/* hide optional columns (can't use nth-child due to colspans on some rows) */
+	col
+	th,
+	td 
+	{
+		width: auto;
+	}
+
+
+	td {
+		padding-left: 0;
+		padding-right: 0;
+	}	
+
+	col.optional,
+	th.optional,
+	td.optional 
+	{
+		padding: 0;
+		margin: 0;
+		display: none;
+	}
+
+	table {
+		width: 100%;
+	}
+
+	svg.graph { 
+		width: 51px; 
+	}
+
+	table.inventory col:nth-of-type(1),
+	table.inventory col:nth-of-type(2),
+	table.inventory col:nth-of-type(3) {
+		width: auto;
+	}
+}
+
+@media all and (max-width: 320px)
+{
+	div.subnav ul li
+	{
+		margin-right: 2px;
+		padding-left: 1px;
+		padding-right: 1px;
+		text-overflow: ellipsis;
+		font-size: 0.75em;
+		line-height: 1.5em;
+	}	
+}
+
+/* dark mode for macOS */
+@media screen and ( prefers-color-scheme: dark ) 
+{
+	body {
+		background: $dark-background-color;
+		color: $dark-text-color;
+	}
+
+	body.report main
+	{
+		background: $dark-background-color;
+	}
+	
+	a:link {
+		color: $dark-link-color;
+	}
+	
+	a:visited {
+		color: $dark-visited-color;
+	}
+	
+	body.report code, body.report td pre, body.source aside pre {
+		border: 1px solid $dark-code-border-color;
+		background-color: $dark-code-background-color;
+	}
+
+	body.report td mark, body.source aside mark {
+		color: $dark-code-error-text-color;
+		background-color: transparent;
+		border-bottom: 1px dotted red;
+	}
+
+	div#header
+	{
+		background-color: $dark-nav-background-color;
+	}
+
+	#header ul li {
+		color: $dark-tab-color;
+		background-color: transparent;
+	}
+	
+	#header ul li.selected {
+		background-color: $dark-selected-tab-background-color;
+	}
+	
+	#header ul li:hover {
+		background-color: $dark-selected-tab-background-color;
+	}
+
+	#header ul li#menu-page-link a, #header ul li#menu-page-link a:hover {
+		color: $dark-link-color;
+	}
+
+	div.subnav 
+	{
+		background-color: $dark-subnav-background-color;
+	}
+	
+	div.subnav ul li {
+		background-color:transparent;
+	}
+
+	div.subnav ul li.selected {
+		background-color: $dark-background-color;
+		border-bottom: 3px solid $dark-background-color;
+	}
+	
+	div.subnav ul li:hover {
+		background-color: $dark-selected-subtab-background-color;
+	}
+
+	div#header a, div.subnav a {
+		color: $dark-tab-color;
+	}
+
+	svg text 
+	{
+		fill: currentColor;
+	}	
+
+	button.menu
+	{
+		color: $dark-button-text-color;
+		background-color: $dark-background-color;
+		border: 1px solid $dark-button-border-color;
+	}
+	
+	button.menu:hover
+	{
+		color: $dark-button-text-color;
+		border-color: $dark-button-hover-border-color;
+		background-color: $dark-button-hover-background-color;
+	}
+
+	th, td.section 
+	{
+		background: $dark-th-background-color;
+		border-bottom: 5px solid $dark-th-border-color;
+		border-top: 5px solid $dark-th-border-color;
+	}
+	
+	table.compat th.section 
+	{
+		border-left: 1px solid $dark-th-border-color;
+	}
+
+	tr:hover button.chevron
+	{
+		border-color: $dark-button-hover-border-color;
+		background-color: $dark-button-hover-background-color;
+	}
+
+	td.graph-ok
+	{
+		background-color: transparent;
+		border-top: 1px solid $dark-button-border-color;
+		border-bottom: 1px solid $dark-button-border-color;	
+		border-right: 1px solid $dark-button-border-color;	
+	}
+
+	td.graph-ok:first-of-type
+	{
+		border-left: 1px solid $dark-button-border-color;	
+	}
+
+	rect.graph-ok
+	{
+		fill: transparent;
+	}	
+
+	/* view source header */ 
+	header, aside { color:$dark-aside-text-color; background-color:$dark-aside-background-color; border:1px solid $dark-aside-border-color;  }
+	header th { background-color: $dark-aside-background-color; }
+	
+	/* view source issue box */ 
+	aside code {
+		border: 1px solid $dark-code-border-color;
+		background-color: $dark-aside-code-background-color;
+	}
+
+	/* view source code */
+	main.pre { color: $dark-text-color; }
+	main.pre code.dhtml { background-color: $dark-dhtml-color; }
+	main.pre span.ok { color: $dark-ok-color; } 
+	main.pre span.err { text-decoration: dotted underline $dark-error-color; color: $dark-error-color; }
+}
+
+@media (forced-colors: active), screen and (-ms-high-contrast: active)
+{
+	/* use CSS UA defaults, since can't predict which high contrast theme has been chosen */
+	body {
+		background: unset;
+		color: unset;
+	}
+
+	a:link {
+		color: unset;
+	}
+	
+	a:visited {
+		color: unset;
+	}
+	
+	body.report code, body.report td pre, body.source aside pre {
+		border: 1px solid currentColor;
+		background-color: transparent;
+	}
+		 
+	/* this produces unreadable text in legacy MsHtml with high contrast dark only (OK in WebView2 and with MsHtml high contrast white) 
+	   only affects Windows 10 users without WebView2 installed, and Windows 10 goes end-of-life on October 14, 2025
+	*/
+	body.report td mark, body.source aside mark {
+		color: revert;
+		background-color: revert;
+		border-bottom: 1px dotted currentColor;
+	}		
+
+	#header ul li 
+	{
+		border-bottom: 3px solid currentColor;
+		border-top: 3px solid currentColor;
+		border-left: 3px solid currentColor;
+		border-right: 3px solid currentColor;
+		forced-color-adjust: none;
+	}
+	
+	#header ul li.selected 
+	{
+		border-top: 3px solid currentColor;
+		border-left: 3px solid currentColor;
+		border-right: 3px solid currentColor;
+		forced-color-adjust: none;
+	}
+
+	div.subnav 
+	{
+		border-bottom: 2px solid currentColor;
+	}
+
+	div.subnav ul li 
+	{
+		border-top: 2px solid transparent;
+		border-left: 2px solid transparent;
+		border-right: 2px solid transparent;		
+		forced-color-adjust: none;
+	}
+
+	div.subnav ul li.selected, div.subnav ul li:hover 
+	{
+		border-bottom: 2px solid currentColor;
+		border-top-width: 2px;
+		border-left-width: 2px;
+		border-right-width: 2px;
+		background-color: unset;
+		forced-color-adjust: none;
+	}
+
+	@media screen and ( prefers-color-scheme: light ) 
+	{
+		div.subnav ul li.selected, div.subnav ul li:hover 
+		{
+			border-color: currentColor;
+			border-bottom-color: currentColor;
+		}
+	}
+
+	th, td.section 
+	{
+		border-bottom: none;
+		border-top: none;
+	}
+
+	svg text 
+	{
+		fill: currentColor;
+	}
+}
+
+@media print
+{
+	body
+	{
+		font-size: 10pt;
+	}
+
+    #header, .subnav {display: none; }
+			
+	button.menu
+	{
+		text-align: left;
+		border: none;
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	button.chevron,
+	select,
+	table.issues tfoot
+	{
+		display: none;
+	}
+
+	main
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	table.issues col.priority { width: 5%; min-width: 55px; }
+	table.issues col.description { width: 55%; }
+	table.issues col.location { width: 28%; }
+	table.issues col.count { width: 12%; min-width: 75px; }					
+	
+	table.issues tr td
+	{
+		overflow: visible;
+	}
+	
+	table.graph td
+	{
+		/* force background colors to print */
+		-webkit-print-color-adjust: exact;
+	}
+}	
+

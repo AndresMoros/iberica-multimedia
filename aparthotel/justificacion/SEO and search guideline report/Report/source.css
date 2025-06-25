@@ -1,0 +1,95 @@
+/* this file is only used by build 792 and should never be changed */
+
+/* corrects block display not defined in IE6/7/8/9 */
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section
+{
+	display:block;
+}
+
+body { font-size: 0.95em; color: black; background-color: white; font-family: Arial, Helvetica, sans-serif; }
+main.pre { color: #333; white-space: pre; font-family: monospace; clear: both; }
+
+img { border: none; vertical-align: middle; }
+p { padding:0; margin:0; }
+
+iframe#iframeSpelling
+{
+    width:0px;
+    height:0px;
+    border:0px solid white;
+}
+
+header, aside { border-radius: 10px; margin-bottom: 10px; margin-top: 4em; position: relative; z-index: 1; top: 0px; left: 0px; width: 90%; padding: 6px; color: black; background-color: #f7f7f7; border: 1px solid #e0e0e0; font-family: Arial, Helvetica, sans-serif; float: left; clear: both;  }
+header, aside + aside { margin-top: 10px; }
+header th { text-align: left; font-weight: normal; font-style: normal; }
+header tr { vertical-align: top; }
+header tr.middle { vertical-align: middle; }
+header tr.middle img { text-align: absmiddle; }
+header div.links { display: none; width: 100%; }
+
+aside { white-space: normal; padding-left: 40px; }
+aside img { margin-left: -30px; padding-right: 10px; }
+aside div { margin-bottom: 1em; }
+
+span.ok { color: #000; } 
+span.err { color: rgb(174,0,0); } /* rgb(255,0,0) fails WCAG AA contrast test */
+
+code.dhtml { background-color: #eeeeff; font-weight: bold; }
+
+a.accessible { display: none; } 
+
+p code { display: block; float: left; width: 90%; font-size: 1em; }
+p code:first-child { width: 4em; clear: both; }
+p.embed { clear:both; }
+p.embed iframe { width:100%; height:1800px; }
+
+span.issue-bad
+{
+	/* should match style of span.issue-bad in report.css */    
+    text-decoration: none;
+    color: rgb(174,0,0);
+    line-height: 1.5em;
+}			    
+a.spell-bad
+{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px dotted red;
+    line-height: 1.5em;
+}
+a.spell-good
+{
+    text-decoration: line-through;
+    color: gray;
+    border-bottom: none;
+    line-height: 1.5em;
+}
+
+button.menu
+{
+    border-radius: 4px;
+    font-size: 1em;
+    width: 10em;
+    margin: 0;
+    
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+button.menu:hover
+{
+    color: #000;
+    border-color: #aaa;
+    background-color: #eef;
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" xml:space="preserve">
+ <g transform="translate(10,10)" stroke="rgb(221,34,34)" stroke-antialiasing="true" stroke-width="2" fill="none">
+  <circle cx="0" cy="0" r="8"/>
+  <path d="M-5 -1 L-5 1 L-1 1 L-1 5 L1 5 L1 1 L5 1 L 5 -1 L1 -1 L1 -5 L -1 -5 L-1 -1 Z" fill="rgb(221,34,34)" stroke="none" transform="rotate(45)" />
+ </g>
+</svg>
