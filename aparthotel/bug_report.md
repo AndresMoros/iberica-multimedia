@@ -58,4 +58,6 @@ Solución: Apariencia > Personalizar > CSS adicional:
 **Estado:** [x]
 Se configuró correctamente la función del tema Enfold
 
-## Error
+## Arreglar SEO con Yoast SEO
+- Esto hizo que el sitio dejara de funcionar, por una  incompatibilidad con All In One SEO, se solucionó desde el hosting
+
