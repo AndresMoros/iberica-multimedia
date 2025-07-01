@@ -1,0 +1,59 @@
+/* --- Footer block  --- */
+.av-alb-blogposts .entry-content > p,
+.av-alb-blogposts .post-meta-infos * {
+	color: #fff !important;
+}
+
+.av-alb-blogposts a {
+    color: #fff !important;
+}
+/* Explicación: Debido al fondo negro de la foto en el bloque FOOTER, 
+se debe usar esto para que el texto sea blanco. Se puede cambiar 
+el color con otro codigo hex (#fff = blanco) */
+
+#av_section_1,
+#av_section_3,
+#av_section_4,
+#after_section_4 {
+	border: none;
+}
+/* Explicación: Bordes innecesarios en la pagina de inicio */
+
+/* --- Primer párrafo --- */
+
+/* Inicio */
+#model-response-message-contentr_be6ef00108ce0693 {
+	width: 85% !important;
+	margin: 0 auto;
+	
+}
+
+/* Sobre nosotros */
+#about-intro {
+	width: 85% !important;
+	margin: 0 auto;
+}
+/* Explicación: Con esto el contenido puede leerse mejor, no es tan extenso horizontalmente. 
+Puede solucionarse metiendo el contenido en bloques independientes y colocandolo al lado de 
+una imagen. En ese caso, esta linea de codigo no es necesaria */
+
+
+/* Botón para apuntarse a eventos */
+
+.apuntarse-btn {
+	margin-top: 0px;
+	border: 2px solid #D12E3B !important;
+}
+
+.avia-button-wrap {
+	border: none !important;
+}
+/* Explicación: la  clase .apuntarse-btn puede cambiarse desde la configuraciones del
+bloque de contenido en el apartado de "Avanzado > CSS Class". Los estilos retiran el margen
+superior (así se ve mejor el bloque). 
+Los estilos de .avia-button-wrap retiran un borde que viene por defecto en el tema
+y que encierra al  botón de "Apuntarse" */
+
+/* La instrucción "!important" se usan porque ya hay un valor en las propiedades CSS
+que se manipulan, pero con !important estas modificaciones llegan a ser más "especificas"
+y sobreescriben a las por defecto. */
